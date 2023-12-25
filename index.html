@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BANTOR Configs</title>
+    <link rel="icon" href="https://yt3.googleusercontent.com/K_g4rCM9bnowKsfgcAcuiHgvA5HSCHQiMzTEC1_51gCh61ZESXYzOVqO148XU3IExzDhH7_VRw=s176-c-k-c0x00ffffff-no-rj" type="image/png">
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .product h3 {
+            margin: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        // JavaScript code
+        function addToCart(product, price) {
+            alert("Product added to cart:\n" + product + "\nPrice: MOP$" + price);
+            alert("Please join our Discord: BNOTCR#6613 for further assistance.");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>BANTOR Configs</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>BANTOR Configs</h2>
+            <p>We are a friendly store offering various products.</p>
+        </section>
+
+    <section id="products">
+        <h2>Product</h2>
+        <div class="product">
+            <h3>HTML Website Make</h3>
+            <p>價格：MOP$15</p>
+            <button onclick="addToCart('HTML Website Make')">加入購物車</button>
+        </div>
+        <div class="product">
+            <h3>Python Project</h3>
+            <p>價格：MOP$6</p>
+            <button onclick="addToCart('Python Project')">加入購物車</button>
+        </div>
+        <div class="product">
+            <h3>Design</h3>
+            <p>價格：MOP$5</p>
+            <button onclick="addToCart('Design')">加入購物車</button>
+        </div>
+        <div class="product">
+            <h3>BANTOR Hacks V2</h3>
+            <p>價格：MOP$35</p>
+            <button onclick="addToCart('BANTOR Hacks V2')">加入購物車</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>購物車</h2>
+        <ul id="cart-items">
+            <!-- 購物車項目將動態加入這裡 -->
+        </ul>
+        <p id="discord-info"></p>
+    </section>
+
+    <footer>
+        <!-- 你的頁尾內容放在這裡 -->
+    </footer>
+
+    <script>
+        // JavaScript程式碼
+        let cartItems = [];
+
+        function addToCart(product) {
+            cartItems.push(product);
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItemsList = document.getElementById('cart-items');
+            cartItemsList.innerHTML = '';
+
+            cartItems.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                cartItemsList.appendChild(li);
+            });
+
+            const discordInfo = document.getElementById('discord-info');
+            discordInfo.textContent = "購買產品請加入Discord: BNOTCR#6613，有任何問題或需要支援都可以聯繫我們。";
+        }
+    </script>
+------------------------------------------------------------------------------------------------------------------------------------------------
+<h1>Fake Computer Virus (Free!!)</h1>
+<p>see on youtube:https://www.youtube.com/watch?v=nszO49SxQEo&t=49s</p>
+<hr>
+
+        <p>Please note that online payment is not available. Kindly add our Discord (BNOTCR#6613) for further assistance.</p>
+        &copy; 2022-2023 BANTOR Configs. All rights reserved.
+    </footer>
+</body>
+</html>
