@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ch">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -123,29 +123,40 @@
     </style>
     <script>
         function openGitHub() {
-            window.location.href = "https://github.com/bantor-configs";
+            window.location.href = "https://github.com/bantor-configs/";
+        }
+
+        function openYoutube() {
+            window.location.href = "https://www.youtube.com/channel/UCtHJ_5AkuUUVO9Q2vOgfRvg";
+        }
+        
+        function displayLanguages() {
+            alert("Python, HTML, CSS, Java, C++, and more...");
+        }
+
+        function contactUs() {
+            alert("Contact us via Google Chat: chanchengincompany@gmail.com");
         }
     </script>
 </head>
 <body>
-      <div class="banner">
-          <div class="navbar">
+    <div class="banner">
+        <div class="navbar">
             <div class="logo">BANTOR</div>
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="javascript:contactUs()">Contact us</a></li>
+                <li><a href="javascript:displayLanguages()">Other</a></li>
             </ul>
-          </div>
+        </div>
 
-          <div class="content">
-              <h1>BANTOR Configs</h1>
-              <p>Welcome</p>
-              <div>
-                  <button type="button" onclick="openGitHub()"><span></span>Script</button>
-                  <button type="button"><span></span>Subscribe</button>
-              </div>
-          </div>
-
-      </div>
+        <div class="content">
+            <h1>BANTOR Configs</h1>
+            <p>Welcome</p>
+            <div>
+                <button type="button" onclick="openGitHub()"><span></span>Script</button>
+                <button type="button" onclick="openYoutube()"><span></span>Subscribe</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
